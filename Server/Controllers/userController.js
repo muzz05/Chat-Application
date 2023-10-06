@@ -61,23 +61,6 @@ const login = async (req, res, next) => {
   }
 };
 
-const setAvatar = async (req, res, next) => {
-  try {
-    const avatarImage = req.body.image;
-    const userId = req.params.id;
-    const userData = await User.findByIdAndUpdate(userId, {
-      isAvatarImageSet: true,
-      avatarImage,
-    });
-    return res.json({
-      isSet: userData.isAvatarImageSet,
-      image: userData.avatarImage,
-    });
-  } catch (ex) {
-    next(ex);
-  }
-};
-
 const allUsers = async (req, res, next) => {
   try {
     const users = await User.find({ _id: { $ne: req.params.id } }).select([
@@ -102,4 +85,4 @@ const getUserPhoto = async (req, res, next) => {
     next(ex);
   }
 };
-module.exports = { register, login, setAvatar, allUsers, getUserPhoto };
+module.exports = { register, login, allUsers, getUserPhoto };
