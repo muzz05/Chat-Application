@@ -2,7 +2,7 @@
 This is a Fully Functional Chat Application Based On The MERN Stack
 ## Features
 
-- Custom Profile Pciture
+- Custom Profile Picture
 - Emoji support
 - Fully Functional
 - Supports upto 100 users
