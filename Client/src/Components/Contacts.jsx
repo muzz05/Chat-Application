@@ -97,13 +97,16 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 15px;
+    margin-top: 10px;
     img {
       height: 2rem;
     }
     h3 {
       color: white;
       text-transform: uppercase;
+      margin: 5px;
     }
   }
   .contacts {

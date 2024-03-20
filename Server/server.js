@@ -5,6 +5,7 @@ const app = express();
 const dotenv = require("dotenv");
 const socket = require("socket.io");
 const morgan = require("morgan");
+const port = 4000;
 
 // Configuration of the .ENV file
 dotenv.config();
@@ -23,9 +24,9 @@ app.use("/api/auth", require("./Routes/userRoute"));
 app.use("/api/messages", require("./Routes/messageRoute"));
 
 // Listen the App
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(port, () => {
   console.log(
-    `Server Has Been Started at http://localhost:${process.env.PORT} ...`
+    `Server Has Been Started at http://localhost:${port} ...`
   );
 });
 
