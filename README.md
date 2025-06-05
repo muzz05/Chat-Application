@@ -1,5 +1,9 @@
 # Chat-Application
-This is a Fully Functional Chat Application Based On The MERN Stack
+This is a Fully Functional Chat Application Based On The MERN
+
+![Under Development](https://img.shields.io/badge/Status-Complete-brightgreen)
+
+
 ## Features
 
 - Custom Profile Picture
